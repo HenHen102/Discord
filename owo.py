@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 
-TOKEN = "MTA4OTU3MjAzMjM0MzE4NzU1Nw.GZdi0S.bO8WYu8s05sllUT9w4vSz0wLBqcMxiHXnuDIiY"
+with open(".token", "r") as f:
+    TOKEN = f.readline().strip()
 
 class OwO(commands.Bot):
     def __init__(self, command_prefix):
